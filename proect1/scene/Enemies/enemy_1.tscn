@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://djr07ra3md7yg"]
+
+[ext_resource type="Script" uid="uid://gvbabvb64vpx" path="res://Components/enemy_move.gd" id="1_sdnfb"]
+[ext_resource type="Texture2D" uid="uid://dmq55ina12xai" path="res://Assets/blpixelartist_Skeleton Army/Skeleton_Flaming Skull.png" id="2_lri8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdnfb"]
+size = Vector2(4.25, 6)
+
+[node name="Enemy1" type="CharacterBody2D"]
+script = ExtResource("1_sdnfb")
+
+[node name="SkeletonFlamingSkull" type="Sprite2D" parent="."]
+position = Vector2(-2.84217e-14, -5.68434e-14)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_lri8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.49012e-08, 2)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_sdnfb")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]

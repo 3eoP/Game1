@@ -168,7 +168,7 @@ animations = [{
 "speed": 7.0
 }]
 
-[node name="player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_gwnis")
 
 [node name="Health" type="Node" parent="."]
